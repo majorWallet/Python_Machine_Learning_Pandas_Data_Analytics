@@ -16,8 +16,8 @@ table = titanic.pivot_table(index = ['sex'], columns = ['class'], aggfunc = 'siz
 
 sns.heatmap(table,
             annot=True, fmt = 'd',
-            camp = 'YlGnBu',
-            linewidth = 5,
+            cmap = 'YlGnBu',
+            linewidth=.5,
             cbar = False)
 
 plt.show()
